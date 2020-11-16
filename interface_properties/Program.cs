@@ -12,6 +12,7 @@ namespace interface_properties
         //    }// abstract property
             
         //}
+        //comment out and still have access to Name property?
 
         class Humanoid //: IPerson
         {

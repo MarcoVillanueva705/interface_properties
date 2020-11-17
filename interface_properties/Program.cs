@@ -22,6 +22,11 @@ namespace interface_properties
                 get => _name;
                 set => _name = value;
             }
+            //public Humanoid() practice with constructors
+            //{
+
+            //}
+
         }
 
         static void Main(string[] args)

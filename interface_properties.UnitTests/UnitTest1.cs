@@ -15,6 +15,8 @@ namespace interface_properties.UnitTests
 
         {   //
             //Arrange: Where we initialize our objects;
+
+            var humanoid = new Humanoid();
             
             //Act: We call the method we're going to test
 

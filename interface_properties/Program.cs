@@ -23,9 +23,16 @@ namespace interface_properties
                 set;
             }
 
-            public Humanoid() 
+            public Humanoid()//constuctor 
             {
                 Name = "JoJo";
+            }
+
+            public bool IsTheName(Name name)
+            {
+                if (Name == "JoJo")
+                    return true;
+                return false;
             }
 
     }

@@ -2,7 +2,7 @@
 
 namespace interface_properties
 {
-    class Program
+    public class Program
     {
         //interface IPerson
         //{
@@ -10,32 +10,26 @@ namespace interface_properties
         //    {
         //        get; set;
         //    }// abstract property
-            
+
         //}
         //comment out and still have access to Name property?
 
-        class Humanoid //: IPerson
-        {
-           // private string _name;
-            public string Name  // read-write instance property
-            {
-                get;
-                set;
-            }
+            // private string _name;
+            public Human Name  // read-write instance property
+            { get; set; }
 
-            public Humanoid()//constuctor 
-            {
-                Name = "JoJo";
-            }
-
-            public bool IsTheName(Name name)
-            {
+                public bool IsTheName(Name name)
+                {
                 if (Name == "JoJo")
                     return true;
                 return false;
+                }
+        
+            public class Name 
+            {
+                public bool IsAdmin
             }
 
-    }
 
         static void Main(string[] args)
         {

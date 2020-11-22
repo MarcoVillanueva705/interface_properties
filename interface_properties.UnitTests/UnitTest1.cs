@@ -7,7 +7,7 @@ namespace interface_properties.UnitTests
     public class HumanoidTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void IsTheName_NameIsJoJo_()
             //every test method has 3 parts:
             //1.specifies the method under test
             //2.the scenario being tested

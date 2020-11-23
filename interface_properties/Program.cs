@@ -2,40 +2,33 @@
 
 namespace interface_properties
 {
-    public class Program
+    public class Reservation
     {
-        //interface IPerson
-        //{
-        //    string Name
-        //    {
-        //        get; set;
-        //    }// abstract property
+        public User MadeBy //class Program property
+        { get; set; }
 
-        //}
-        //comment out and still have access to Name property?
-
-            // private string _name;
-            public Human Name  // read-write instance property
-            { get; set; }
-
-                public bool IsTheName(Name name)
-                {
-                if (Name == "JoJo")
-                    return true;
-                return false;
-                }
-        
-            public class Name 
-            {
-                public bool IsAdmin
-            }
-
-
-        static void Main(string[] args)
+        public bool CanBeCancelledBy(User user)//class Program method
         {
-            Humanoid myObj = new Humanoid();
-            //myObj.Name = "Liam";
-            Console.WriteLine(myObj.Name);
+            if (user.IsAdmin)
+                return true;
+            if (user == MadeBy)
+                return true;
+            return false;
         }
     }
+
+    public class User 
+    {
+      public bool IsAdmin//class User property
+      { get; set; }
+    }
+
+
+       // static void Main(string[] args)
+        //{
+            //Humanoid myObj = new Humanoid();
+            //myObj.Name = "Liam";
+            //Console.WriteLine(myObj.Name);
+       // }
+    
 }

@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace interface_properties.UnitTests
 {
     [TestClass]//attribute
-    public class ProgramTests
+    public class ReservationTests
     {
         [TestMethod]//attribute w/one method
         public void CanBeCancelledBy_UserIsAdmin_ReturnsTrue()

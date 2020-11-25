@@ -23,12 +23,13 @@ namespace interface_properties
       { get; set; }
     }
 
-
-       // static void Main(string[] args)
-        //{
+    class Program
+    {
+        static void Main(string[] args)
+        {
             //Humanoid myObj = new Humanoid();
             //myObj.Name = "Liam";
             //Console.WriteLine(myObj.Name);
-       // }
-    
+        }
+    }
 }

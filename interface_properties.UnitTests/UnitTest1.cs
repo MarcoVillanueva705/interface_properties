@@ -1,5 +1,8 @@
 ﻿using System;
+//fixed 'Arrange' error
+using interface_properties;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 
 namespace interface_properties.UnitTests
 {

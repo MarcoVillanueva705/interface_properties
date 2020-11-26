@@ -29,5 +29,6 @@ namespace interface_properties.UnitTests
             Assert.IsTrue(result);
             //fix test method tomorrow
         }
+        //netcoreapp2.1 cannot be referenced by .NETFramework, Version=4.6.1
     }
 }

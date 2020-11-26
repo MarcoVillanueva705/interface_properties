@@ -6,10 +6,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace interface_properties.UnitTests
 {
-    [TestClass]//attribute
+    [TestFixture]//attribute
     public class ReservationTests
     {
-        [TestMethod]//attribute w/one method
+        [Test]//attribute w/one method
         public void CanBeCancelledBy_UserIsAdmin_ReturnsTrue()
             //every test method has 3 parts:
             //1.specifies the method under test

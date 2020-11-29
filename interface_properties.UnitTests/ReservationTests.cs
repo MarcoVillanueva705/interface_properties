@@ -1,8 +1,8 @@
 ﻿using System;
 //fixed 'Arrange' error
 using interface_properties;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+//using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace interface_properties.UnitTests
 {
@@ -23,10 +23,11 @@ namespace interface_properties.UnitTests
 
             //Act: We call the method we're going to test
 
-           var result = reservation.CanBeCancelledBy(new User { IsAdmin = True});
+            bool result = reservation.CanBeCancelledBy(new User { IsAdmin = true});
 
             //Assert: Verify if the result is correct
             Assert.IsTrue(result);
+            Assert.That(result, Is.True);
             //fix test method tomorrow
         }
         //netcoreapp2.1 cannot be referenced by .NETFramework, Version=4.6.1

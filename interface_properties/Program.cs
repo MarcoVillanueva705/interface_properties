@@ -4,12 +4,12 @@ namespace interface_properties
 {
     public class Reservation
     {
-        public User MadeBy //class Program property
+        public User MadeBy //class Reservation property
         { get; set; }
 
         public bool CanBeCancelledBy(User user)//class Program method
         {
-            if (user.IsAdmin)
+            if (user.IsAdmin)//user of type User class obj
                 return true;
             if (user == MadeBy)
                 return true;
@@ -27,6 +27,8 @@ namespace interface_properties
     {
         static void Main(string[] args)
         {
+            //Reservation myRes = new Reservation();
+            
             //Humanoid myObj = new Humanoid();
             //myObj.Name = "Liam";
             //Console.WriteLine(myObj.Name);

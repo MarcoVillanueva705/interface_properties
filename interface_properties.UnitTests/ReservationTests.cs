@@ -26,7 +26,7 @@ namespace interface_properties.UnitTests
             bool result = reservation.CanBeCancelledBy(new User { IsAdmin = true});
 
             //Assert: Verify if the result is correct
-            Assert.IsTrue(result);
+            //Assert.IsTrue(result);
             Assert.That(result, Is.True);
             //fix test method tomorrow
         }

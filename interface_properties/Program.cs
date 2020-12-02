@@ -23,7 +23,7 @@ namespace interface_properties
       { get; set; }
       public string Name
         { get; set; }
-
+    
     }
 
     class Program

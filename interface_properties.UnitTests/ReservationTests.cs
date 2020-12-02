@@ -31,5 +31,23 @@ namespace interface_properties.UnitTests
             //fix test method tomorrow
         }
         //netcoreapp2.1 cannot be referenced by .NETFramework, Version=4.6.1
+
+        ////TDD 'test driven development'
+        //You write your tests before writing
+        //the production code
+
+        //start by writing a test that will fail
+        //because you don't have any application
+        //code that would make it pass
+        //right then you'll write the simplest code
+        //that will make this test pass
+        //use the simplest implementation that would make
+        //the test pass
+        //then, refactor the code if necessary
+
+        //Benefits of TDD
+        //Testable Source Code
+        //Full Coverage by Tests
+        //Simpler Implementation
     }
 }

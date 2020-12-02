@@ -21,6 +21,9 @@ namespace interface_properties
     {
       public bool IsAdmin//class User property
       { get; set; }
+      public string Name
+        { get; set; }
+
     }
 
     class Program
@@ -29,9 +32,9 @@ namespace interface_properties
         {
             //Reservation myRes = new Reservation();
             
-            //Humanoid myObj = new Humanoid();
-            //myObj.Name = "Liam";
-            //Console.WriteLine(myObj.Name);
+            User myObj = new User();
+            myObj.Name = "Liam";
+            Console.WriteLine(myObj.Name);
         }
     }
 }

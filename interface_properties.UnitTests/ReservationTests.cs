@@ -28,8 +28,21 @@ namespace interface_properties.UnitTests
             //Assert: Verify if the result is correct
             //Assert.IsTrue(result);
             Assert.That(result, Is.True);
-            //fix test method tomorrow
         }
+        [Test]
+        public void CanBeCancelledBy_SameUserCancellingTheReservation_ReturnTrue()
+
+        {
+            //arrange
+            var user = new User();
+            //act
+            var reservation = new Reservation { MadeBy = user};
+
+            var result = reservation.CanBeCancelledBy(user);
+            //pick up on sat
+        }
+
+
         //netcoreapp2.1 cannot be referenced by .NETFramework, Version=4.6.1
 
         ////TDD 'test driven development'

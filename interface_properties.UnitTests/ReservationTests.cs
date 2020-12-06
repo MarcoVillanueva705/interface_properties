@@ -39,7 +39,20 @@ namespace interface_properties.UnitTests
             var reservation = new Reservation { MadeBy = user};
 
             var result = reservation.CanBeCancelledBy(user);
-            //pick up on sat
+            Assert.IsTrue(result);
+        
+        }
+        [Test]
+        public void CanBeCancelledBy_AnotherUserCancellingTheReservation_ReturnFalse()
+        {
+            //arrange
+            //trying to understand MadeBy
+            var reservation = new Reservation { MadeBy = new User()};
+
+            //act
+            //two different User objects User.User()?
+            //is new User in this case shorthand for User user = new User()?
+            var result = reservation.CanBeCancelledBy(new User());
         }
 
 

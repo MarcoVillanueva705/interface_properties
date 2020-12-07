@@ -53,6 +53,9 @@ namespace interface_properties.UnitTests
             //two different User objects User.User()?
             //is new User in this case shorthand for User user = new User()?
             var result = reservation.CanBeCancelledBy(new User());
+
+            //Assert
+            Assert.IsFalse(result);
         }
 
 

@@ -10,7 +10,7 @@ namespace interface_properties.UnitTests
     public class ReservationTests
     {
         [Test]//attribute w/one method
-        public void CanBeCancelledBy_UserIsAdmin_ReturnsTrue()
+        public void CanBeCancelledBy_AdminCancelling_ReturnTrue()
             //every test method has 3 parts:
             //1.specifies the method under test
             //2.the scenario being tested
@@ -30,7 +30,7 @@ namespace interface_properties.UnitTests
             Assert.That(result, Is.True);
         }
         [Test]
-        public void CanBeCancelledBy_SameUserCancellingTheReservation_ReturnTrue()
+        public void CanBeCancelledBy_SameUserCancelling_ReturnTrue()
 
         {
             //arrange
@@ -43,7 +43,7 @@ namespace interface_properties.UnitTests
         
         }
         [Test]
-        public void CanBeCancelledBy_AnotherUserCancellingTheReservation_ReturnFalse()
+        public void CanBeCancelledBy_AnotherUserCancelling_ReturnFalse()
         {
             //arrange
             //trying to understand MadeBy

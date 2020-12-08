@@ -9,11 +9,16 @@ namespace interface_properties
 
         public bool CanBeCancelledBy(User user)//class Program method
         {
-            if (user.IsAdmin)//user of type User class obj
-                return true;
-            if (user == MadeBy)
-                return true;
-            return false;
+            //return the result of this expression
+            return (user.IsAdmin || MadeBy == user);
+
+            //^^refactored^^
+
+        //    if (user.IsAdmin)//user of type User class obj
+        //        return true;
+        //    if (user == MadeBy)
+        //        return true;
+        //    return false;
         }
     }
 

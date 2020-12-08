@@ -55,7 +55,8 @@ namespace interface_properties.UnitTests
             var result = reservation.CanBeCancelledBy(new User());
 
             //Assert
-            Assert.IsFalse(result);
+            //Assert.IsFalse(result);
+            Assert.That(result, Is.False);//NUnit style
         }
 
 

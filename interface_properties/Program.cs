@@ -26,7 +26,11 @@ namespace interface_properties
         public string User
         { get; set; }
 
-        public string AddMenuItem()
+        public string AddMenuItem(User food)
+        {
+            //what am I accessing?
+            return food.Name;
+        }
     }
 
     public class User 

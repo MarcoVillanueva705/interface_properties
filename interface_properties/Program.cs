@@ -21,12 +21,21 @@ namespace interface_properties
         //    return false;
         }
     }
+    public class Menu
+    {
+        public string User
+        { get; set; }
+
+        public string AddMenuItem()
+    }
 
     public class User 
     {
       public bool IsAdmin//class User property
       { get; set; }
       public string Name
+        { get; set; }
+      public string Food
         { get; set; }
     
     }

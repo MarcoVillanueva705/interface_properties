@@ -23,13 +23,14 @@ namespace interface_properties
     }
     public class Menu
     {
-        public string User
+        public User AddFood
         { get; set; }
 
-        public string AddMenuItem(User food)
+        public string AddMenuItem(User item)
         {
             //what am I accessing?
-            return food.Name;
+            //'item' is the var of type object 'User'
+            return item.Food;
         }
     }
 

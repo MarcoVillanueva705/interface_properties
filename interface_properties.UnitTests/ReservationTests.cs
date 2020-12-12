@@ -59,6 +59,19 @@ namespace interface_properties.UnitTests
             //Assert.IsFalse(result);
             Assert.That(result, Is.False);//NUnit style
         }
+        [Test]
+        public void AddMenuItem_ItemIsFood_ReturnString()
+        {
+            //Arrange
+            var menu = new Menu {AddFood = new User()};
+
+            //Act
+            var result = menu.AddMenuItem(new User());
+            //Assert
+            //add menu item test failed
+            Assert.That(result, Is.NaN);
+        }
+             
 
 
         //netcoreapp2.1 cannot be referenced by .NETFramework, Version=4.6.1

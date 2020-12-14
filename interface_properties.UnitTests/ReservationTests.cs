@@ -63,12 +63,12 @@ namespace interface_properties.UnitTests
         public void AddMenuItem_ItemIsFood_ReturnString()
         {
             //Arrange
-            var menu = new Menu {AddFood = new User()};
-
+            var item = new User();
             //Act
+            var menu = new Menu {AddFood = item};
             var result = menu.AddMenuItem(new User());
             //Assert
-            //add menu item test failed
+            //add menu item test failed still on 12/13
             Assert.That(result, Is.NaN);
         }
              

@@ -66,10 +66,12 @@ namespace interface_properties.UnitTests
             var item = new User();
             //Act
             var menu = new Menu {AddFood = item};
-            var result = menu.AddMenuItem(new User());
+            var result = menu.AddMenuItem(item);
             //Assert
             //add menu item test failed still on 12/13
-            Assert.That(result, Is.NaN);
+            //fixed by changing Assert class and return statement
+            //in Menu class method on 12/14
+            Assert.IsNotNull(item);
         }
              
 

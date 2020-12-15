@@ -30,7 +30,7 @@ namespace interface_properties
         {
             //what am I accessing?
             //'item' is the var of type object 'User'
-            return item.Food.ToString();
+            return item.Food;
         }
     }
 

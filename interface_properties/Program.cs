@@ -38,7 +38,8 @@ namespace interface_properties
     {
       public bool IsAdmin//class User property
       { get; set; }
-      public string Name
+        //private string name; //field
+      public string Name //property accesor
         { get; set; }
       public string Food
         { get; set; }
